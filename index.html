@@ -5,127 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MD Kaif | Portfolio</title>
 <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  /* GENERAL STYLING */
+  * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, Helvetica, sans-serif;}
+  body {background: linear-gradient(to right, #e0f7fa, #f1f8e9); color:#222; line-height:1.6;}
 
-  body {
-    background: #f5f7fa;
-    color: #222;
-    line-height: 1.6;
-  }
-
+  /* HEADER */
   header {
-    background: #1e1e2f;
+    background: #0a3d62; /* Dark Professional Blue */
     color: #fff;
     padding: 50px 20px;
     text-align: center;
     animation: fadeIn 1s ease-in;
   }
+  header h1 {font-size: 2.5rem; margin-bottom: 5px;}
+  header p {font-size: 1.1rem; color:#d1d8e0;}
 
-  header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-  }
-
-  header p {
-    font-size: 1.2rem;
-    color: #ccc;
-  }
-
+  /* SECTIONS */
   section {
     max-width: 1000px;
     margin: 30px auto;
-    background: #fff;
+    background: #ffffffcc; /* Slight transparency */
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     opacity: 0;
     transform: translateY(20px);
     animation: fadeUp 1s forwards;
-    animation-delay: 0.2s;
   }
-
   section h2 {
     margin-bottom: 15px;
-    border-bottom: 3px solid #1e1e2f;
+    border-bottom: 3px solid #0a3d62;
     display: inline-block;
     padding-bottom: 5px;
-    font-size: 1.5rem;
-    color: #1e1e2f;
+    font-size: 1.6rem;
+    color: #0a3d62;
   }
 
-  .profile {
-    text-align: center;
-  }
-
+  /* PROFILE IMAGE */
+  .profile {text-align:center;}
   .profile img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #1e1e2f;
+    width:160px; height:160px; border-radius:50%; object-fit:cover;
+    margin-bottom:15px; border: 3px solid #0a3d62;
     transition: transform 0.5s;
   }
+  .profile img:hover {transform: scale(1.1);}
 
-  .profile img:hover {
-    transform: scale(1.1);
-  }
-
+  /* SKILLS */
   .skills span {
-    display: inline-block;
-    background: #1e1e2f;
-    color: #fff;
-    padding: 8px 15px;
-    margin: 5px;
-    border-radius: 25px;
-    font-size: 0.95rem;
-    transition: 0.3s;
+    display:inline-block; background:#0a3d62; color:#fff; padding:8px 15px; margin:5px; border-radius:25px;
+    font-size:0.95rem; transition:0.3s; cursor:pointer;
+    animation: popIn 0.5s ease forwards;
   }
-
   .skills span:hover {
-    background: #ff4c60;
-    cursor: pointer;
+    background:#009688;
+    transform: scale(1.2);
   }
 
-  .item p {
-    margin-top: 5px;
-  }
-
-  ul {
-    margin-left: 20px;
-    margin-top: 10px;
-  }
-
-  ul li {
-    margin-bottom: 5px;
-    font-weight: 500;
-  }
+  /* ITEMS & LISTS */
+  .item p {margin-top:5px;}
+  ul {margin-left:20px; margin-top:10px;}
+  ul li {margin-bottom:5px; font-weight:500; list-style: disc inside;}
 
   footer {
-    text-align: center;
-    padding: 25px;
-    color: #666;
-    font-size: 0.95rem;
-    margin-top: 40px;
+    text-align:center; padding:25px; color:#555; font-size:0.95rem; margin-top:40px;
   }
 
-  /* Animations */
-  @keyframes fadeUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0;}
-    to { opacity: 1;}
-  }
+  /* ANIMATIONS */
+  @keyframes fadeUp {to {opacity:1; transform:translateY(0);}}
+  @keyframes fadeIn {from{opacity:0;}to{opacity:1;}}
+  @keyframes popIn {from{opacity:0; transform:scale(0.5);}to{opacity:1; transform:scale(1);}}
 </style>
 </head>
 <body>
@@ -133,7 +81,7 @@
 <header>
   <h1>MD KAIF</h1>
   <p>Assistant Manager | QHSE | Digital Marketer</p>
-  <p>📞 +91 8271210600 | ✉️ serajswn04@gmail.com</p>
+  <p>+91 8271210600 | serajswn04@gmail.com</p>
 </header>
 
 <section class="profile">
@@ -166,27 +114,23 @@
   <h2>Professional Experience</h2>
   <div class="item">
     <strong>Partner Relationship Manager (PRM) – Battery Smart</strong><br>
-    <strong>Present</strong>
-    <p>Managing partner relationships, coordinating daily operations, resolving tickets, handling communications and issues, supporting business growth, and maintaining reports and records.</p>
+    <small>Present</small>
+    <p>Managing partner relationships, coordinating daily operations, resolving tickets, handling communications, supporting business growth, and maintaining reports.</p>
   </div>
-  
- <div class="item">
-   <strong>QHSE Executive – Battery Smart</strong><br>
-    <strong>04-06-2024 to 01-06-2025</strong>
+  <div class="item">
+    <strong>QHSE Executive – Battery Smart</strong><br>
+    <small>04-06-2024 to 01-06-2025</small>
     <p>Conducted safety audits, implemented HSE procedures, prepared reports, and ensured workplace safety standards.</p>
   </div>
- 
- <div class="item">
-    <strong>Safety Officer – Reliance Refinery (Shutdown)</strong>
+  <div class="item">
+    <strong>Safety Officer – Reliance Refinery (Shutdown | 2 Months)</strong>
     <p>Ensured HSE compliance, conducted toolbox talks, monitored permits and PPE, identified hazards, and maintained safety records.</p>
   </div>
 </section>
 
 <section>
   <h2>Freelancing Experience</h2>
-  <div class="item">
-    <p>Worked as a freelance digital marketer, providing social media management, branding support, and promotional strategies for small businesses and individual clients.</p>
-  </div>
+  <p>Worked as a freelance digital marketer providing social media management, branding support, and promotional strategies for small businesses and individual clients.</p>
 </section>
 
 <section>
@@ -219,15 +163,15 @@
 <section>
   <h2>Achievements</h2>
   <ul>
-    <li>Awarded Employee of the Month (3 Times) at Battery Smart for consistent performance and reliability.</li>
-    <li>Maintained a zero-incident safety record during shutdown work at Reliance Refinery.</li>
+    <li>Awarded Employee of the Month (3 Times) at Battery Smart for consistent performance.</li>
+    <li>Maintained zero-incident safety record during shutdown work at Reliance Refinery.</li>
   </ul>
 </section>
 
 <section>
   <h2>Tools & Technologies</h2>
   <ul>
-    <li>AI Tools & Prompt Engineering – Skilled in creating professional content and streamlining work</li>
+    <li>AI Tools & Prompt Engineering – Skilled in creating professional content efficiently</li>
     <li>• MS WORD</li>
     <li>• MS POWERPOINT</li>
     <li>• MS EXCEL (Intermediate)</li>
@@ -253,17 +197,15 @@
   <p><strong>Date of Expiry:</strong> 06-06-2033</p>
 </section>
 
-<footer>
-  © 2026 MD KAIF | Portfolio Website
-</footer>
+<footer>© 2026 MD KAIF | Portfolio Website</footer>
 
 <script>
-  // Animate sections on scroll
+  // Scroll animation for sections
   const sections = document.querySelectorAll("section");
   window.addEventListener("scroll", () => {
     const scrollY = window.pageYOffset;
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 200;
+      const sectionTop = section.offsetTop - 300;
       if(scrollY > sectionTop){
         section.style.opacity = "1";
         section.style.transform = "translateY(0)";
