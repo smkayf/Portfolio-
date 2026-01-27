@@ -1,229 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MD Kaif | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD Kaif | Portfolio</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+  body {
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+  }
 
-    body {
-      background: #f4f6f8;
-      color: #222;
-      line-height: 1.6;
-    }
+  header {
+    background: #1e1e2f;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+  }
 
-    header {
-      background: #111;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
 
-    header h1 {
-      font-size: 2.2rem;
-    }
+  header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
 
-    header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: #ccc;
-    }
+  section {
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.2s;
+  }
 
-    section {
-      max-width: 1000px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 25px;
-      border-radius: 8px;
-    }
+  section h2 {
+    margin-bottom: 15px;
+    border-bottom: 3px solid #1e1e2f;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    color: #1e1e2f;
+  }
 
-    section h2 {
-      margin-bottom: 15px;
-      border-bottom: 2px solid #111;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
+  .profile {
+    text-align: center;
+  }
 
-    .profile {
-      text-align: center;
-    }
+  .profile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #1e1e2f;
+    transition: transform 0.5s;
+  }
 
-    .profile img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 3px solid #111;
-    }
+  .profile img:hover {
+    transform: scale(1.1);
+  }
 
-    .skills span {
-      display: inline-block;
-      background: #111;
-      color: #fff;
-      padding: 6px 12px;
-      margin: 6px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
+  .skills span {
+    display: inline-block;
+    background: #1e1e2f;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    transition: 0.3s;
+  }
 
-    .item {
-      margin-bottom: 15px;
-    }
+  .skills span:hover {
+    background: #ff4c60;
+    cursor: pointer;
+  }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #666;
-      font-size: 0.9rem;
+  .item p {
+    margin-top: 5px;
+  }
+
+  ul {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  footer {
+    text-align: center;
+    padding: 25px;
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 40px;
+  }
+
+  /* Animations */
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-  </style>
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
+  }
+</style>
 </head>
-
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <h1>MD KAIF</h1>
-    <p>Assistant Manager | QHSE | Digital Marketer</p>
-    <p>📞 +91 8271210600 | ✉️ serajswn04@gmail.com</p>
-  </header>
+<header>
+  <h1>MD KAIF</h1>
+  <p>Assistant Manager | QHSE | Digital Marketer</p>
+  <p>📞 +91 8271210600 | ✉️ serajswn04@gmail.com</p>
+</header>
 
-  <!-- PROFILE -->
-  <section class="profile">
-    <img src="https://via.placeholder.com/150" alt="Profile Photo">
-    <p>
-      Result-oriented professional with experience in operations management, QHSE compliance, and digital marketing. Skilled in team coordination, process improvement, and business growth.
-    </p>
-  </section>
+<section class="profile">
+  <img src="https://via.placeholder.com/160" alt="Profile Photo">
+  <p>Result-oriented professional with experience in operations management, QHSE compliance, and digital marketing. Skilled in team coordination, process improvement, and business growth.</p>
+</section>
 
-  <!-- OBJECTIVE -->
-  <section>
-    <h2>Objective</h2>
-    <p>
-      To secure a challenging position where I can utilize my managerial, QHSE, and digital marketing skills to contribute to organizational success while continuously enhancing my professional expertise.
-    </p>
-  </section>
+<section>
+  <h2>Objective</h2>
+  <p>To secure a challenging position where I can utilize my managerial, QHSE, and digital marketing skills to contribute to organizational success while continuously enhancing my professional expertise.</p>
+</section>
 
-  <!-- KEY SKILLS -->
-  <section>
-    <h2>Key Skills</h2>
-    <div class="skills">
-      <span>Team Management</span>
-      <span>Operations Handling</span>
-      <span>QHSE Compliance</span>
-      <span>Risk Assessment</span>
-      <span>Audit & Inspection</span>
-      <span>Digital Marketing</span>
-      <span>Social Media Strategy</span>
-      <span>Client Coordination</span>
-      <span>Reporting & Documentation</span>
-      <span>Problem Solving</span>
-    </div>
-  </section>
+<section>
+  <h2>Key Skills</h2>
+  <div class="skills">
+    <span>Team Management</span>
+    <span>Operations Handling</span>
+    <span>QHSE Compliance</span>
+    <span>Risk Assessment</span>
+    <span>Audit & Inspection</span>
+    <span>Digital Marketing</span>
+    <span>Social Media Strategy</span>
+    <span>Client Coordination</span>
+    <span>Reporting & Documentation</span>
+    <span>Problem Solving</span>
+  </div>
+</section>
 
-  <!-- PROFESSIONAL EXPERIENCE -->
-  <section>
-    <h2>Professional Experience</h2>
+<section>
+  <h2>Professional Experience</h2>
+  <div class="item">
+    <strong>Partner Relationship Manager (PRM) – Battery Smart</strong><br>
+    <small>Present</small>
+    <p>Managing partner relationships, coordinating daily operations, resolving tickets, handling communications and issues, supporting business growth, and maintaining reports and records.</p>
+  </div>
+  <div class="item">
+    <strong>QHSE Executive – Battery Smart</strong><br>
+    <small>04-06-2024 to 01-06-2025</small>
+    <p>Conducted safety audits, implemented HSE procedures, prepared reports, and ensured workplace safety standards.</p>
+  </div>
+  <div class="item">
+    <strong>Safety Officer – Reliance Refinery (Shutdown | 2 Months)</strong>
+    <p>Ensured HSE compliance, conducted toolbox talks, monitored permits and PPE, identified hazards, and maintained safety records.</p>
+  </div>
+</section>
 
-    <div class="item">
-      <strong>Partner Relationship Manager (PRM) – Battery Smart</strong><br>
-      <small>Present</small>
-      <p>
-        Managing partner relationships, coordinating daily operations, resolving tickets, handling communications and issues, supporting business growth, and maintaining reports and records.
-      </p>
-    </div>
+<section>
+  <h2>Freelancing Experience</h2>
+  <div class="item">
+    <p>Worked as a freelance digital marketer, providing social media management, branding support, and promotional strategies for small businesses and individual clients.</p>
+  </div>
+</section>
 
-    <div class="item">
-      <strong>QHSE Executive – Battery Smart</strong><br>
-      <small>04-06-2024 to 01-06-2025</small>
-      <p>
-        Conducted safety audits, implemented HSE procedures, prepared reports, and ensured workplace safety standards.
-      </p>
-    </div>
+<section>
+  <h2>Education</h2>
+  <ul>
+    <li>Matriculation – 2021 (Passed)</li>
+    <li>Intermediate – 2021–2023 (Passed)</li>
+    <li>B.Sc. – Pursuing</li>
+  </ul>
+</section>
 
-    <div class="item">
-      <strong>Safety Officer – Reliance Refinery (Shutdown | 2 Months)</strong>
-      <p>
-        Ensured HSE compliance, conducted toolbox talks, monitored permits and PPE, identified hazards, and maintained safety records.
-      </p>
-    </div>
-  </section>
+<section>
+  <h2>Technical Qualifications</h2>
+  <ul>
+    <li>Digital Marketing – 2024</li>
+    <li>ADFISM – 2024</li>
+  </ul>
+</section>
 
-  <!-- FREELANCING EXPERIENCE -->
-  <section>
-    <h2>Freelancing Experience</h2>
-    <div class="item">
-      <p>
-        Worked as a freelance digital marketer, providing social media management, branding support, and promotional strategies for small businesses and individual clients.
-      </p>
-    </div>
-  </section>
+<section>
+  <h2>Languages</h2>
+  <ul>
+    <li>Hindi</li>
+    <li>Urdu</li>
+    <li>English</li>
+    <li>Arabic (Intermediate)</li>
+  </ul>
+</section>
 
-  <!-- EDUCATION -->
-  <section>
-    <h2>Education</h2>
-    <p>Matriculation – 2021 (Passed)</p>
-    <p>Intermediate – 2021–2023 (Passed)</p>
-    <p>B.Sc. – Pursuing</p>
-  </section>
+<section>
+  <h2>Achievements</h2>
+  <ul>
+    <li>Awarded Employee of the Month (3 Times) at Battery Smart for consistent performance and reliability.</li>
+    <li>Maintained a zero-incident safety record during shutdown work at Reliance Refinery.</li>
+  </ul>
+</section>
 
-  <!-- TECHNICAL QUALIFICATIONS -->
-  <section>
-    <h2>Technical Qualifications</h2>
-    <p>Digital Marketing – 2024</p>
-    <p>ADFISM – 2024</p>
-  </section>
+<section>
+  <h2>Tools & Technologies</h2>
+  <ul>
+    <li>AI Tools & Prompt Engineering – Skilled in creating professional content and streamlining work</li>
+    <li>• MS WORD</li>
+    <li>• MS POWERPOINT</li>
+    <li>• MS EXCEL (Intermediate)</li>
+    <li>• CapCut</li>
+    <li>• Canva</li>
+  </ul>
+</section>
 
-  <!-- LANGUAGES -->
-  <section>
-    <h2>Languages</h2>
-    <p>Hindi, Urdu, English, Arabic (Intermediate)</p>
-  </section>
+<section>
+  <h2>About Me</h2>
+  <p><strong>Contact:</strong> +91 8271210600</p>
+  <p><strong>Email:</strong> serajswn04@gmail.com</p>
+  <p><strong>Address:</strong> Baishakhi, Siwan (841226), Bihar, India</p>
+  <p><strong>Father’s Name:</strong> MD Serajuddin</p>
+  <p><strong>Marital Status:</strong> Single</p>
+</section>
 
-  <!-- ACHIEVEMENTS -->
-  <section>
-    <h2>Achievements</h2>
-    <p>Awarded Employee of the Month (3 Times) at Battery Smart for consistent performance and reliability.</p>
-    <p>Maintained a zero-incident safety record during shutdown work at Reliance Refinery.</p>
-  </section>
+<section>
+  <h2>Passport Details</h2>
+  <p><strong>Passport Number:</strong> X9474814</p>
+  <p><strong>Place of Issue:</strong> Patna, Bihar</p>
+  <p><strong>Date of Issue:</strong> 07-06-2023</p>
+  <p><strong>Date of Expiry:</strong> 06-06-2033</p>
+</section>
 
-  <!-- TOOLS & TECHNOLOGIES -->
-  <section>
-    <h2>Tools & Technologies</h2>
-    <p>AI Tools & Prompt Engineering – Skilled in using AI to create professional content and streamline work efficiently</p>
-    <p>MS Word, MS Excel (Intermediate), MS PowerPoint, CapCut, Canva</p>
-  </section>
+<footer>
+  © 2026 MD KAIF | Portfolio Website
+</footer>
 
-  <!-- ABOUT ME -->
-  <section>
-    <h2>About Me</h2>
-    <p><strong>Contact:</strong> +91 8271210600</p>
-    <p><strong>Email:</strong> serajswn04@gmail.com</p>
-    <p><strong>Address:</strong> Baishakhi, Siwan (841226), Bihar, India</p>
-    <p><strong>Father’s Name:</strong> MD Serajuddin</p>
-    <p><strong>Marital Status:</strong> Single</p>
-  </section>
-
-  <!-- PASSPORT DETAILS -->
-  <section>
-    <h2>Passport Details</h2>
-    <p><strong>Passport Number:</strong> X9474814</p>
-    <p><strong>Place of Issue:</strong> Patna, Bihar</p>
-    <p><strong>Date of Issue:</strong> 07-06-2023</p>
-    <p><strong>Date of Expiry:</strong> 06-06-2033</p>
-  </section>
-
-  <footer>
-    © 2026 MD KAIF | Portfolio Website
-  </footer>
+<script>
+  // Animate sections on scroll
+  const sections = document.querySelectorAll("section");
+  window.addEventListener("scroll", () => {
+    const scrollY = window.pageYOffset;
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 200;
+      if(scrollY > sectionTop){
+        section.style.opacity = "1";
+        section.style.transform = "translateY(0)";
+      }
+    });
+  });
+</script>
 
 </body>
-  </html>
+</html>
